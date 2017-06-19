@@ -1,0 +1,64 @@
+div ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  color: black;
+
+}
+
+a {
+  color: #fff;
+  font-size: 50px;
+  text-decoration: none;
+
+}
+div li {
+  text-align: center;
+  display: inline-block;
+  color: black;
+  padding-left: 20px
+
+}
+
+#section1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: url(wallpaper1.jpg);
+  background-size: cover;
+  height: 1080px;
+  width: auto;
+  color: white;
+  font-size: 50px;
+
+}
+#section2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: url(Mantis_1920x1200.jpg);
+  background-size: cover;
+  height: 1080px;
+  width: auto;
+  color: white;
+  font-size: 50px;
+}
+
+#section3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: url(3491612-1920-x-1080-wallpaper-hd.jpg);
+  background-size: cover;
+  height: 1080px;
+  width: auto;
+  color: white;
+  font-size: 50px;
+}

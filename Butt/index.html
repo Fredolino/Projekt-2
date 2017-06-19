@@ -1,0 +1,54 @@
+
+
+<script type="text/javascript" language="Javascript">
+function pick(n, min, max) {
+   var results = [];
+   for (i = 1; i <= n; i++) {
+       var value = Math.floor(Math.random() * max + min);
+       results.push(value);
+   }
+   return results;
+}
+
+function zahlen() {
+   var running = true;
+   do {
+       if (!confirm(pick(6, 1, 49).sort(function (a, b) {
+           return a - b;
+       }))) {
+           running = false;
+       }
+   } while (running)
+}
+function pick(n, min, max) {
+   var results = [];
+   for (i = 1; i <= n; i++) {
+       var value = Math.floor(Math.random() * max + min);
+       results.push(value);
+   }
+   return results;
+}
+
+function superzahl() {
+   var running = true;
+   do {
+       if (!confirm(pick(1, 1, 49).sort(function (a, b) {
+           return a - b;
+       }))) {
+           running = false;
+       }
+   } while (running)
+}
+
+
+</script>
+</head>
+
+<body>
+        <h1>6 zufällige Zahlen für Lotterie</h1>
+        <p><button onclick="zahlen()">klicke mich</button> um die Zahlen zu generieren</p>
+
+        <h1>die Superzahl</h1>
+        <p><button onclick="superzahl()">klicke mich</button> um die Superzahl zu generieren</p>
+
+   </body>
