@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>aaa</title>
+<meta name="author" content="Dieter">
+<meta name="generator" content="Ulli Meybohms HTML EDITOR">
+<script language="JavaScript">
+<!--
+
+function zieh ()
+{
+
+var z = new Array ();
+
+for (i=1; i<8; i++)
+	{
+	 z[i]= Math.floor(Math.random() *49+1);
+
+
+	}
+	for (i=1; i<7; i++)
+	{
+	for (j=1; j<7-i; j++)
+	  {
+	  if (z[j]>z[j+1])
+		{
+		k=z[j];
+		z[j]=z[j+1];
+		z[j+1]=k;
+		}
+	  }
+	}
+
+
+if ((z[1] == z[2]) || (z[1] == z[3]) || (z[1] == z[4]) || (z[1] == z[5]) || (z[1] == z[6]) || (z[1] == z[7]) ||
+	(z[2] == z[3]) || (z[2] == z[4]) || (z[2] == z[5]) || (z[2] == z[6]) || (z[2] == z[7]) ||
+	(z[3] == z[4]) || (z[3] == z[5]) || (z[3] == z[6]) || (z[3] == z[7]) ||
+	(z[4] == z[5]) || (z[4] == z[6]) || (z[4] == z[7]) ||
+	(z[5] == z[6]) || (z[5] == z[7]) ||
+	(z[6] == z[7]))
+
+	{zieh()}
+
+	else{
+
+
+	 felder.feld1.value = z[1];
+	 felder.feld2.value = z[2];
+	 felder.feld3.value = z[3];
+	 felder.feld4.value = z[4];
+	 felder.feld5.value = z[5];
+	 felder.feld6.value = z[6];
+	 felder.feld7.value = z[7];
+return
+}
+}
+
+//-->
+</script>
+<noscript></noscript>
+
+
+</head>
+<body background="/lotto-balls[1].JPG" text="#999900" bgcolor="#123456" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+
+   <h1> Lottozahlengenerator </h1>
+
+
+
+
+
+<form name="felder">
+
+
+Lottozahlen:
+
+<input type="Text" name="feld1" value="" size="2" maxlength="">
+<input type="Text" name="feld2" value="" size="2" maxlength="">
+<input type="Text" name="feld3" value="" size="2" maxlength="">
+<input type="Text" name="feld4" value="" size="2" maxlength="">
+<input type="Text" name="feld5" value="" size="2" maxlength="">
+<input type="Text" name="feld6" value="" size="2" maxlength="">
+<br><br>
+Zusatzzahl:
+<input type="Text" name="feld7" value="" size="2" maxlength="">
+ <br><br>
+<input type="button" speed="20" size="" name="button" value="Ausgeben!" onClick="zieh()" >
+   <br><br><br>
+</form>
+
+
+
+</body>
+</html>
